@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - Deliverato</title>
+    <link rel="icon" href="img/deliverato-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="topo"></div>
+    <main class="pagina-auth fundo-degrade">
+        <div class="caixa-auth">
+            <h1 data-i18n="entrar">Entrar</h1>
+            <p class="troca"><span data-i18n="naoTemConta">Não tem uma conta?</span>
+                <a href="cadastro.html" class="link-laranja" id="linkTroca" data-i18n="cadastreSeLink">Cadastre-se</a>
+            </p>
+            <div class="sociais">
+                <button type="button" data-social="Google">Google <img src="img/google.png" alt=""></button>
+                <button type="button" data-social="Facebook">Facebook <img src="img/facebook.png" alt=""></button>
+                <button type="button" data-social="Apple">Apple <img src="img/apple.png" alt=""></button>
+            </div>
+            <p class="ou" data-i18n="ou">OU</p>
+            <form class="form-auth" id="formAuth" data-tipo="login" novalidate>
+                <input type="email" id="email" class="campo" placeholder="e-mail" autocomplete="email">
+                <p class="msg-erro" id="emailErro"></p>
+                <input type="password" id="senha" class="campo" placeholder="senha" autocomplete="current-password">
+                <p class="msg-erro" id="senhaErro"></p>
+                <button type="submit" class="btn-laranja cheio" data-i18n="entrar">Entrar</button>
+            </form>
+        </div>
+    </main>
+    <div id="rodape"></div>
+    <script src="js/dados.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

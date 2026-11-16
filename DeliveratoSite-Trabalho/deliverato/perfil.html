@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu perfil - Deliverato</title>
+    <link rel="icon" href="img/deliverato-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="topo"></div>
+    <main class="pagina-perfil fundo-degrade">
+        <div class="container">
+            <section class="caixa perfil-topo">
+                <label class="foto-perfil" title="Trocar foto">
+                    <img src="img/camera.png" alt="" class="camera" id="fotoPerfil">
+                    <input type="file" accept="image/*" id="inputFoto" hidden>
+                </label>
+                <div>
+                    <h1 id="nomeUsuario">NOME DO USUARIO</h1>
+                    <p class="tipo" data-i18n="cliente">CLIENTE</p>
+                    <p class="email" id="emailUsuario"></p>
+                </div>
+            </section>
+            <div class="grade-perfil">
+                <form class="card-perfil" id="formConta" novalidate>
+                    <h3><img src="img/user.png" alt="" class="icone-preto"> <span data-i18n="dadosConta">DADOS DA
+                            CONTA</span></h3>
+                    <input class="campo" id="novoNome" placeholder="NOVO NOME DO USUÁRIO" maxlength="40">
+                    <input class="campo" id="novoEmail" type="email" placeholder="DIGITE O NOVO E-MAIL">
+                    <p class="msg-erro" id="novoEmailErro" style="margin:-6px 0 8px;text-align:center"></p>
+                    <button type="submit" class="btn-laranja" data-i18n="alterar">ALTERAR</button>
+                </form>
+                <form class="card-perfil" id="formSenha" novalidate>
+                    <h3><img src="img/lock.png" alt="" class="icone-preto"> <span data-i18n="seguranca">SEGURANÇA</span>
+                    </h3>
+                    <input class="campo" id="novaSenha" type="password" placeholder="DIGITE A NOVA SENHA"
+                        autocomplete="new-password">
+                    <button type="submit" class="btn-laranja" data-i18n="alterar">ALTERAR</button>
+                </form>
+                <form class="card-perfil largo" id="endereco" novalidate>
+                    <h3><img src="img/pin.png" alt="" class="icone-preto"> <span data-i18n="alterarEndereco">ALTERAR O
+                            ENDEREÇO</span></h3>
+                    <div class="grade-endereco">
+                        <div><label for="eCep">CEP</label><input class="campo" id="eCep" inputmode="numeric"
+                                maxlength="9"></div>
+                        <div><label for="eNumero">Número da casa</label><input class="campo" id="eNumero" maxlength="8">
+                        </div>
+                        <div><label for="eRua">Rua</label><input class="campo" id="eRua"></div>
+                        <div><label for="eComplemento">Complemento</label><input class="campo" id="eComplemento"></div>
+                        <div><label for="eBairro">Bairro</label><input class="campo" id="eBairro"></div>
+                        <div><label for="eReferencia">Referência</label><input class="campo" id="eReferencia"></div>
+                    </div>
+                    <p class="msg-erro" id="eErro" style="text-align:center;margin-bottom:8px"></p>
+                    <button type="submit" class="btn-laranja" data-i18n="alterar">ALTERAR</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div id="rodape"></div>
+    <script src="js/dados.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

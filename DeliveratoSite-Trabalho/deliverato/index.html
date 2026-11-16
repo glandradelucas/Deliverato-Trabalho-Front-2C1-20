@@ -1,0 +1,89 @@
+<!-- termina o js ai geraldo -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliverato - O Seu Prato Sai Barato</title>
+    <link rel="icon" href="img/deliverato-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="topo"></div>
+    <main>
+        <section class="hero">
+            <img src="img/decoracao.png" alt="" class="decor esq">
+            <img src="img/decoracao.png" alt="" class="decor dir">
+            <div class="container">
+                <div class="hero-texto">
+                    <h1>DELIVERATO</h1>
+                    <p class="slogan" data-i18n="slogan">"O Seu Prato Sai Barato"</p>
+                    <p class="lorem">Bateu a fome? No Deliverato você encontra os lanches, cafés e salgados que mais
+                        ama, das marcas
+                        que você já conhece, com preço justo e entrega rápida na porta da sua casa. Escolha o
+                        restaurante, monte
+                        seu pedido em poucos cliques e acompanhe tudo em tempo real, do preparo até a entrega. Comer bem
+                        não
+                        precisa sair caro: aqui, o seu prato sai barato.</p>
+                    <a href="restaurantes.html" class="btn-peca" data-i18n="pecaJa">PEÇA JÁ</a>
+                </div>
+                <img src="img/pratocapa.png" alt="Prato com bife, arroz, feijão, batata frita e salada"
+                    class="hero-img">
+            </div>
+        </section>
+        <section class="secao-chefe">
+            <div class="fundo">
+                <h2 data-i18n="chefeAprova">CHEFE ALFREDO HORSE APROVA!</h2>
+                <div class="conteudo">
+                    <img src="img/alfredohorse.png" alt="Chefe Alfredo Horse - O Seu Prato Sai barato" class="chefe">
+                    <div class="sobre-nos">
+                        <h2 data-i18n="sobreNos">SOBRE NÓS:</h2>
+                        <p>O Deliverato é um delivery especializado em fast-food, criado em Belo Horizonte para quem
+                            quer matar a fome
+                            rápido e sem pesar no bolso. Aqui você encontra só as grandes redes que todo mundo conhece:
+                            McDonalds,
+                            Burger King, Subway, Habib's e Starbucks, todas em um só lugar, com cupons de desconto e
+                            taxas de
+                            entrega baixas. Quem garante a qualidade é o nosso Chefe Alfredo Horse, que prova, aprova e
+                            não deixa
+                            nenhum lanche sair sem o selo de sabor do Deliverato!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faixa-marcas">
+            <div class="container">
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'mcdonalds')" title="McDonalds"><img src="img/mcdonalds.png"
+                        alt="McDonalds"></a>
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'burgerking')" title="Burger King"><img src="img/burgerking.png"
+                        alt="Burger King"></a>
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'subway')" title="Subway"><img src="img/subway-mini.png" alt="Subway"></a>
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'habibs')" title="Habib's"><img src="img/habibs.png" alt="Habib's"></a>
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'starbucks')" title="Starbucks"><img src="img/starbucks.png"
+                        alt="Starbucks"></a>
+            </div>
+        </section>
+        <section class="secao-cadastros">
+            <div class="container">
+                <div class="card-cadastro">
+                    <img src="img/dinner.png" alt="">
+                    <h3 data-i18n="cadRestaurante">CADASTRE SEU RESTAURANTE</h3>
+                    <a href="cadastro.html" class="btn-laranja" data-i18n="cadastreSe">CADASTRE-SE</a>
+                </div>
+                <div class="card-cadastro">
+                    <img src="img/motorcycle.png" alt="">
+                    <h3 data-i18n="cadEntregador">SE TORNE UM ENTREGADOR</h3>
+                    <a href="cadastro.html" class="btn-laranja" data-i18n="cadastreSe">CADASTRE-SE</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="rodape"></div>
+    <script src="js/dados.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Deliverato</title>
+    <link rel="icon" href="img/deliverato-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="topo"></div>
+    <main class="pagina-carrinho fundo-degrade">
+        <div class="container">
+            <section class="caixa carrinho-itens" id="caixaItens"></section>
+            <aside class="caixa resumo">
+                <h3 data-i18n="enderecoEntrega">ENDEREÇO DE ENTREGA</h3>
+                <p class="endereco-entrega" id="enderecoEntrega"></p>
+                <a href="perfil.html#endereco" class="link-laranja" style="font-size:14px"
+                    data-i18n="mudarEndereco">Mudar endereço</a>
+                <button class="btn-cinza" id="btnMaisItens" data-i18n="adicionarMaisBtn">ADICIONAR MAIS ITENS</button>
+                <div class="cupom-box">
+                    <div class="nome-cupom" id="cupomUso"></div>
+                    <button class="btn-laranja" id="btnCupons" data-i18n="cupons">CUPONS</button>
+                </div>
+                <h3 data-i18n="resumoValores">RESUMO DOS VALORES:</h3>
+                <div class="linhas-valores">
+                    <p><span data-i18n="totalItens">Total dos itens:</span> <span id="vItens">R$ 0,00</span></p>
+                    <p><span data-i18n="taxaEntrega">Taxa de entrega:</span> <span id="vTaxa">R$ 0,00</span></p>
+                    <p class="desconto" id="linhaDesconto" hidden><span data-i18n="desconto">Desconto:</span> <span
+                            id="vDesconto">- R$ 0,00</span></p>
+                    <p class="total"><span data-i18n="totalPagar">Total a pagar:</span> <span id="vTotal">R$ 0,00</span>
+                    </p>
+                </div>
+                <button class="btn-cinza" id="btnContinuar" data-i18n="continuar">CONTINUAR</button>
+                <button class="btn-cinza" id="btnLimpar" style="margin-top:6px" data-i18n="limpar">LIMPAR</button>
+            </aside>
+        </div>
+    </main>
+    <div id="rodape"></div>
+    <script src="js/dados.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma de Pagamento - Deliverato</title>
+    <link rel="icon" href="img/deliverato-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="topo"></div>
+    <main class="pagina-pagamento fundo-degrade">
+        <div class="container">
+        <section class="caixa finalizar">
+            <div class="topo">
+                <div class="avatar-restaurante" id="pgAvatar"></div>
+                <h2 data-i18n="finalizarCompra">FINALIZAR COMPRA</h2>
+            </div>
+            <div class="pedido-resumo">
+                <div class="foto"><img src="img/quadrosla.png" alt="" id="pgFoto"></div>
+                <div>
+                    <h3 id="pgNome">Nome do pedido</h3>
+                    <ul id="pgItens"></ul>
+                </div>
+            </div>
+            <hr>
+            <div class="subs">
+                <p>SUBTOTAL: <span id="pgSubtotal">R$ 0,00</span></p>
+                <p>TAXA DE ENTREGA: <span id="pgTaxa">R$ 0,00</span></p>
+                <p>DESCONTO: <span id="pgDesconto">R$ 0,00</span></p>
+            </div>
+            <hr>
+            <p class="total-final">TOTAL: <span id="pgTotal">R$ 0,00</span></p>
+        </section>
+        <section class="caixa opcoes-pagamento-wrap">
+            <form class="opcoes-pagamento" id="formPagamento">
+                <label class="opcao">
+                    <input type="radio" name="pagamento" value="credito" checked><span class="radio"></span>
+                    <span data-i18n="credito">Cartão de crédito</span>
+                    <span class="bandeiras"><img src="img/visa.png" alt="Visa"><img src="img/mastercard.png"
+                            alt="Mastercard"></span>
+                </label>
+                <label class="opcao">
+                    <input type="radio" name="pagamento" value="debito"><span class="radio"></span>
+                    <span data-i18n="debito">Cartão de débito</span>
+                    <span class="bandeiras"><img src="img/mastercard.png" alt="Mastercard"><img src="img/visa.png"
+                            alt="Visa"></span>
+                </label>
+                <label class="opcao">
+                    <input type="radio" name="pagamento" value="pix"><span class="radio"></span>
+                    <span class="bandeiras" style="margin:0"><img src="img/pix.png" alt=""></span> Pix
+                </label>
+                <label class="opcao">
+                    <input type="radio" name="pagamento" value="nupay"><span class="radio"></span>
+                    <span class="bandeiras" style="margin:0"><img src="img/nubank.png" alt=""></span> NuPay
+                </label>
+                <button type="submit" class="btn-laranja" data-i18n="pagarAgora">PAGAR AGORA!</button>
+            </form>
+        </section>
+        </div>
+    </main>
+    <div id="rodape"></div>
+    <script src="js/dados.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

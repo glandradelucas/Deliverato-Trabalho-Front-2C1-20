@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes - Deliverato</title>
+    <link rel="icon" href="img/deliverato-logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="topo"></div>
+    <main class="pagina-restaurantes">
+        <div class="container">
+            <h1 data-i18n="melhoresRest">Nossos Melhores Restaurantes:</h1>
+            <div class="melhores">
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'subway')" style="background:#103a20" title="Subway"><img
+                        src="img/subway-mini.png" alt="Subway"></a>
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'burgerking')" style="background:#8c2500" title="Burger King"><img
+                        src="img/burgerking.png" alt="Burger King"></a>
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'mcdonalds')" style="background:#ee1d23" title="McDonalds"><img
+                        src="img/mcdonalds.png" alt="McDonalds"></a>
+                <a href="restaurante.html" onclick="localStorage.setItem('loja', 'habibs')" style="background:#c2c2c2" title="Habib's"><img
+                        src="img/habibs.png" alt="Habib's"></a>
+            </div>
+            <hr class="linha-preta">
+            <div class="filtros">
+                <button class="filtro" data-filtro="aberto" data-i18n="fAberto">ABERTO</button>
+                <button class="filtro" data-filtro="fastfood" data-i18n="fFastFood">FAST-FOOD</button>
+                <button class="filtro" data-filtro="avaliacoes" data-i18n="fAvaliacoes">MELHORES AVALIAÇÕES</button>
+                <button class="filtro" data-filtro="proximos" data-i18n="fProximos">MAIS PRÓXIMOS</button>
+            </div>
+            <h2 data-i18n="encontre">Encontre restaurantes na sua região:</h2>
+            <div class="busca-cep">
+                <input type="text" id="cep" class="campo" inputmode="numeric" placeholder="Digite seu CEP"
+                    data-i18n-ph="digiteCep" maxlength="9">
+            </div>
+            <p class="info-cep" id="infoCep"></p>
+            <div class="lista-restaurantes" id="lista"></div>
+            <div class="paginacao">
+                <button class="esq" id="anterior" aria-label="Página anterior"><img src="img/setamaior.png"
+                        alt=""></button>
+                <span id="numPagina"></span>
+                <button class="dir" id="proxima" aria-label="Próxima página"><img src="img/setamaior.png"
+                        alt=""></button>
+            </div>
+        </div>
+    </main>
+    <div id="rodape"></div>
+    <script src="js/dados.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
